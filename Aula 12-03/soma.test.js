@@ -3,6 +3,7 @@ const soma = require("./soma")
 describe("Testes Função Soma", () => {
 
     test("Soma de números positivos", () => {
+
         expect(soma(6, 8)).toBe(14)
     })
 
