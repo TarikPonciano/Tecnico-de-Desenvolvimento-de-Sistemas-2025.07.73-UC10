@@ -1,18 +1,16 @@
-function maiorNumero(listaNumeros) {
-
-    if (listaNumeros.length === 0) {
-        return "Não foi possível determinar o maior número! Formato inválido!"
+function maiorNumero(lista) {
+    if (!Array.isArray(lista) || lista.length === 0) {
+        return "Não foi possível determinar o maior número! Formato inválido!";
     }
 
-    let maior = listaNumeros[0]
+    let maior = lista[0];
 
-    listaNumeros.forEach(numero => {
-        if (numero > maior) {
-            maior = numero
+    for (let i = 1; i < lista.length; i++) {
+        if (lista[i] > maior) {
+            maior = lista[i];
         }
-    });
+    }
 
-    return maior
+    return maior;
 }
-
 module.exports = maiorNumero;
