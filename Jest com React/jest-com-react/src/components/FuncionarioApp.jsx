@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { validarCPF } from "../utils/funcionarioUtils";
-import { Buttons } from "@testing-library/user-event/dist/cjs/system/pointer/buttons.js";
 import "./FuncionarioApp.css"
 
 export function FuncionarioApp(){
