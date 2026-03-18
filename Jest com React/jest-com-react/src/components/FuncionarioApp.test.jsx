@@ -44,7 +44,9 @@ describe("Testes da Tela Cadastro de Funcionários", () => {
         expect(screen.getByRole('alert')).toHaveTextContent('Preencha todos os campos!')
     })
 
-    // Crie um teste que verifica o preenchimento do formulário completo porém com erro de cpf
+    // Crie um teste que verifica o preenchimento do formulário completo porém com cpf inválido
+
+    // Crie um teste que verifica a inserção correta de um usuário
 
 
 
